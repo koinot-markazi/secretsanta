@@ -275,6 +275,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #333;
 }
 
 .fox-logo img {
@@ -298,6 +299,16 @@ p {
 #play-pause-button span {
   position: absolute;
   left: 30px;
+}
+#audio-ctrl{
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+  font-family: "AmaticSC-bold";
+  font-size: 2em;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1024px) {

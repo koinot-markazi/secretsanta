@@ -32,30 +32,20 @@ $(document).ready(function () {
         $(".logo").css("margin-top", "100px");
     });
 
-    var audio = new Audio("../audio.mp3");
-    audio.play();
-
-    $('#play-pause-button').on("click", function () {
-        if ($(this).find("img").hasClass('pause')) {
-            $(this).find("img").removeClass("pause");
-            $(this).find("img").addClass("play");
-            $(this).find("img").attr('src','img/play.svg');
-            $(this).find("span").text('Play');
-            audio.pause();
+    $('#audio-ctrl').click(function(){
+        if($('#audio-text').html() == "Play"){
+            $('#audio-text').html('Pause');
+            $('#audio-btn').attr("src", "img/pause.svg")
+            document.getElementById('audio-player').play();
         }
-        else if($(this).find("img").hasClass('play')) {
-            $(this).find("img").removeClass("play");
-            $(this).find("img").addClass("pause");
-            $(this).find("img").attr('src','img/pause.svg');
-            $(this).find("span").text('Pause');
-            audio.play();
+        else{
+            $('#audio-text').html('Play');
+            $('#audio-btn').attr("src", "img/play.svg")
+            document.getElementById('audio-player').pause();
         }
-    });
+    })
 
-    audio.onended = function () {
-        $("#play-pause-button").removeClass('fa-pause');
-        $("#play-pause-button").addClass('fa-play');
-    };
+
 });
 
 

@@ -12,7 +12,14 @@
 
   <body style="margin: 0; overflow: hidden;">
     <section class="section1">
-      <div id="play-pause-button"> <img src="img/pause.svg" class="pause" alt="play-pause"> <span> Pause </span></div>
+      <!-- <div id="play-pause-button"> <img src="img/pause.svg" class="pause" alt="play-pause"> <span> Pause </span></div> -->
+      
+      <audio src="audio.mp3" autoplay id="audio-player"></audio>
+
+      <button id="audio-ctrl">
+        <img src="img/pause.svg" alt="" id="audio-btn">
+        <span id="audio-text">Pause</span></button>
+
 
       <img src="img/logo.svg" alt="logo" class="logo" />
 
@@ -23,7 +30,7 @@
           gift, you may  <a href="https://www.wikihow.com/Choose-a-Gift-for-Your-Friends" class="article-link" target="_blank"> read this article. </a> 
         </p>
 
-        <button class="disabled-btn" disabled>You are registered</button>
+        <button class="close-btn btn" type="button">You are registered</button>
       </div>
 
       <form action="" class="form">
