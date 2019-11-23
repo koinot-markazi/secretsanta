@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Secret Santa</title>
+    <link rel="shortcut icon" href="img/title.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body style="margin: 0; overflow: hidden;">
+    <section class="section1">
+      <div id="play-pause-button"> <img src="img/pause.svg" class="pause" alt="play-pause"> <span> Pause </span></div>
+
+      <img src="img/logo.svg" alt="logo" class="logo" />
+
+      <div class="confirmation">
+        <p>
+          Congratulations. you are secret santa for someone. Wait for next
+          instructions on your email! if you need some help with choosing a
+          gift, you may  <a href="https://www.wikihow.com/Choose-a-Gift-for-Your-Friends" class="article-link" target="_blank"> read this article. </a> 
+        </p>
+
+        <button class="disabled-btn" disabled>You are registered</button>
+      </div>
+
+      <form action="" class="form">
+        <label for="name" class="form-label">Full Name <span>*</span></label>
+        <input type="text" id="name" required placeholder="peter capaldi" />
+
+        <label for="email" class="form-label mt-15"
+          >E-mail <span>*</span></label
+        >
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="p.capaldi@student.inha.uz"
+        />
+
+        <label for="id" class="form-label mt-15"
+          >Student ID <span>*</span></label
+        >
+        <input type="text" id="id" required placeholder="u1410000" />
+
+        <label for="gender" class="form-label mt-15"
+          >Gender <span>*</span></label
+        >
+        <select name="" id="gender">
+          <option value="male">Mr. Santa 🎅</option>
+          <option value="female">Mrs. Santa 🤶</option>
+        </select>
+
+        <label class="form-label mt-15">Locker number</label>
+        <div class="locker-number">
+          <select name="" id="locker">
+            <option value="buildingA">A block</option>
+            <option value="buildingB">B block</option>
+          </select>
+          <input type="text" id="id" required placeholder="0123" />
+        </div>
+
+        <label for="id" class="form-label mt-15"
+          >or type where to leave a gift:</label
+        >
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="4"
+          placeholder="e.g: Come into my house through the fireplace and leave it under the Christmas tree"
+        ></textarea>
+
+        <button class="participation-confirmation">Participate</button>
+        <button class="close-btn" type="button">close</button>
+      </form>
+
+      <button class="participate-btn">Participate</button>
+
+      <img src="img/img1.svg" alt="leafs" class="leafs" />
+
+      <img src="img/img2-2.svg" alt="candy" class="img-anim candy-anim candy1" />
+      <img src="img/img2.svg" alt="candy" class="img-anim candy-anim candy2" />
+      <img src="img/img2.svg" alt="candy" class="img-anim candy-anim candy3" />
+      <img src="img/img2-2.svg" alt="candy" class="img-anim candy-anim candy4" />
+      <img src="img/img2-2.svg" alt="candy" class="img-anim candy-anim candy5" />
+
+      <img src="img/img3.svg" alt="star" class="img-anim star-anim star1" />
+      <img src="img/img3.svg" alt="star" class="img-anim star-anim star2" />
+      <img src="img/img3.svg" alt="star" class="img-anim star-anim star3" />
+
+      <img src="img/img4.svg" alt="star" class="img-anim snow-anim snow1" />
+      <img src="img/img4.svg" alt="star" class="img-anim snow-anim snow2" />
+      <img src="img/img4.svg" alt="star" class="img-anim snow-anim snow3" />
+      <img src="img/img4.svg" alt="star" class="img-anim snow-anim snow4" />
+      <img src="img/img4.svg" alt="star" class="img-anim snow-anim snow5" />
+      <img src="img/img4.svg" alt="star" class="img-anim snow-anim snow6" />
+      <img src="img/img4.svg" alt="star" class="img-anim snow-anim snow7" />
+
+      <a href="https://t.me/fox_u" target="_blank" class="fox-logo">Developed by <img src="img/fox-u.svg" alt="logo-fox"></a>
+      
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
