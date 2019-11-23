@@ -22,10 +22,6 @@ $(document).ready(function () {
         $(".participate-btn").hide();
         $(".logo").css("margin-top", "20px");
     });
-    $(".participation-confirmation").on("click", function () {
-        $(".form").hide();
-        $(".confirmation").show();
-    });
     $(".close-btn").on("click", function () {
         $(".form").hide();
         $(".participate-btn").fadeIn();
