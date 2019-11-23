@@ -48,6 +48,11 @@ $(document).ready(function () {
 
 });
 
+function player(){
+    document.getElementById('audio-player').play();
+    $('#audio-text').html('Pause');
+    $('#audio-btn').attr("src", "img/pause.svg")
+}
 
 let snowmax = 40,
     snowcolor = new Array("#aaaacc", "#ddddff", "#ccccdd", "#f3f3f3", "#f0ffff"),
